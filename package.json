@@ -1,0 +1,24 @@
+{
+  "name": "marvel",
+  "version": "1.0.0",
+  "description": "#### marvel ####",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "npm install --prefix resources",
+    "client": "cd resources && npm run dev",
+    "server": "node server",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "Silvano Amaral",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "node-fetch": "^2.6.0",
+    "js-md5": "^0.7.3"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1"
+  }
+}
